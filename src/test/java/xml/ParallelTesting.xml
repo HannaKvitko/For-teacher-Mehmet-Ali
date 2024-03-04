@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HamzaSuite" parallel="tests" thread-count="2">
+
+    <test name="parallelTest01">
+        <parameter name="browserType" value="chrome"></parameter>
+        <classes>
+            <class name="runners._05_ParallelTestRunner"></class>
+        </classes>
+    </test>
+
+    <test name="parallelTest02">
+        <parameter name="browserType" value="firefox"></parameter>
+        <classes>
+            <class name="runners._05_ParallelTestRunner"></class>
+        </classes>
+    </test>
+
+
+</suite>
